@@ -1,0 +1,5 @@
+<div style="width:80%;padding-left: 50px;margin-top: 10px;">
+    <div class="card"  *ngFor="let student of students">
+       <app-student-details [student]="student" (deleteEvent)="deleteStudent($event)"></app-student-details>
+     </div>
+</div>
